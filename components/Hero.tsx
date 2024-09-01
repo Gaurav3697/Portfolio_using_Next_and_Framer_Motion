@@ -1,13 +1,18 @@
-"use client";
+'use client';
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { FaQuoteLeft } from "react-icons/fa";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { Typewriter } from 'react-simple-typewriter';
 import { BsArrowUpRight } from "react-icons/bs";
+import { useRouter } from 'next/navigation';
 
 
 const Hero = () => {
+  const router = useRouter();
+  const projecthandleClick = () => {
+    router.push('#recentProjects')
+  }
   return (
     <div id='home'>
       <div className="hero-section bg-sky-100 h-screen relative w-auto overflow-hidden">
@@ -48,19 +53,21 @@ const Hero = () => {
           <img src='./assets/my_photo-removebg-preview.png' className='absolute z-10 -bottom-[20vh] md:-bottom-[36vh] left-1/2 transform -translate-x-1/2 h-[25rem] md:h-[30rem]' />
           <div className="elipse bg-[#00A0E1] h-[80vh] w-[100vw] md:w-[35rem] absolute inset-x-0 mx-auto rounded-full"></div>
 
-          <div className='button z-20 border border-white rounded-3xl backdrop-blur-xl w-72 py-1 px-1 inset-x-0 mx-auto top-24 md:top-36 relative overflow-hidden'>
+          <div className='button z-20 border border-white rounded-3xl backdrop-blur-xl w-72 py-1 px-1 inset-x-0 mx-auto top-20 md:top-36 relative overflow-hidden'>
 
-            <button className="z-20 relative inline-flex h-12 overflow-hidden rounded-full p-[1px]">
+            <button className="z-20 relative inline-flex h-12 overflow-hidden rounded-full p-[1px]" onClick={projecthandleClick}>
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
               <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-white[#00A0E1] px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
                 View Projects<BsArrowUpRight />
               </span>
             </button>
-            <button className="p-[3px] relative z-20">
-              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-              <div className="px-8 py-2  bg-[#bfe1ee] rounded-[6px]  relative group transition duration-200 text-black hover:bg-transparent">
-                Hire Me
-              </div>
+            <button className="p-[3px] relative z-20" >
+              <a href="mailto:gm4063420@gmail.com">
+                <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+                <div className="px-8 py-2  bg-[#bfe1ee] rounded-[6px]  relative group transition duration-200 text-black hover:bg-transparent">
+                  Hire Me
+                </div>
+              </a>
             </button>
 
           </div>
