@@ -1,47 +1,47 @@
 export const gridItems = [
     {
-        id: 1,
+        id:1,
         title: "I always gives first priority to serve my client and satisfies them with my Best work",
         description: "",
-        className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-        imgClassName: "w-1/4 h-full",
-        titleClassName: "ml-40",
+        className: "lg:col-span-3 md:col-span-2 md:row-span-4 lg:min-h-[60vh]",
+        imgClassName: "h-full md:h-40 md:bottom-0",
+        titleClassName: "ml-36 md:ml-0",
         img: "/assets/exp2.svg",
         spareImg: "",
     },
     {
-        id: 2,
+        id:2,
         title: "I Likes to work with the client all around the world",
         description: "",
-        className: " lg:col-span-2 md:col-span-3 md:row-span-2 overflow-hidden relative",
+        className: " lg:col-span-2 md:col-span-4 md:row-span-2 overflow-hidden relative",
         imgClassName: "",
         titleClassName: "justify-start",
         img: "",
         spareImg: "",
     },
     {
-        id: 3,
+        id:3,
         title: "My tech stack",
         description: "I constantly sharpen ",
-        className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+        className: "lg:col-span-2 md:col-span-6 md:row-span-2",
         imgClassName: "",
         titleClassName: "justify-center",
         img: "",
         spareImg: "",
     },
     {
-        id: 4,
+        id:4,
         title: "I has a passion in developing websites and web apps",
         description: "",
         className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-        imgClassName: "absolute bottom-0 right-0 h-full",
+        imgClassName: "absolute bottom-0 right-0 h-32",
         titleClassName: "mr-24",
         img: "/assets/exp4.svg",
         spareImg: "",
     },
     {
-        id: 5,
-        title: "Currently Building A video calling app",
+        id:5,
+        title: "Currently Building a Ai sass app",
         description: "",
         className: "md:col-span-3 md:row-span-2",
         imgClassName: "absolute right-0 bottom-0 h-32 md:w-96 w-60",
@@ -50,13 +50,51 @@ export const gridItems = [
         spareImg: "/assets/grid.svg",
     },
     {
-        id: 6,
+        id:6,
         title: "Do you want to start a project together?",
         description: "",
-        className: "lg:col-span-2 md:col-span-3 md:row-span-1 ",
+        className: "lg:col-span-2 md:col-span-6 md:row-span-1 ",
         imgClassName: "",
         titleClassName: "pt-12 justify-center md:max-w-full max-w-60 text-center absolute text-white",
         img: "",
         spareImg: "",
     },
+]
+
+export const Projectsdata = [
+    {
+        "key": 1,
+        "title": "TODO APP",
+        "description": "This is a TODO App which stores task in database.",
+        "url": "https://todo-frontend-with-react.vercel.app/",
+        "imgSrc": "/assets/Todo.png"
+      },
+      {
+        "key": 2,
+        "title": "PORTFOLIO WEBSITE",
+        "description": "This is a fully Responsive website made using REACT",
+        "url": "https://react-portfolio-website-fully-responsive.vercel.app/",
+        "imgSrc": "/assets/portfolio.png"
+      },
+      {
+        "key": 3,
+        "title": "College Website",
+        "description": "This is a very simple single page application with minimilistic animation to refresh my css skillṣ.",
+        "url": "https://college-website-taupe.vercel.app/",
+        "imgSrc": "/assets/college_website.png"
+      },
+      {
+        "key": 4,
+        "title": "ECCOMERCE WEBSITE(GEECTRONICS)",
+        "description": "This is fully functional Ecommerce website made using MERN",
+        "url": "https://my-ecommerce-frontend-delta.vercel.app/",
+        "imgSrc": "/assets/ecommerce.png"
+      },
+      {
+        "key": 5,
+        "title": "ANIMATED MINIMILISTIC PORTFOLIO WEBSITE",
+        "description": "This is the fully animated Portfolio Project with sleek animations",
+        "url": "https://my-ecommerce-frontend-delta.vercel.app/",
+        "imgSrc": "/assets/animated_portfolio.png"
+      },
 ]

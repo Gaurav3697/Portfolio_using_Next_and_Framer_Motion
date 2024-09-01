@@ -1,5 +1,7 @@
+import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
+import Recentprojects from "@/components/Recentprojects";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Image from "next/image";
 
@@ -14,7 +16,7 @@ export default function Home() {
       link:"/"
     },
     {
-      name:"Service",
+      name:"Service", 
       link:"/"
     },
     {
@@ -23,10 +25,12 @@ export default function Home() {
     },
   ]
   return (
-    <main className="w-screen dark:bg-gray-950 bg-white">
-      <FloatingNav className="text-black" navItems={navItems} />
+    <main className="w-screen dark:bg-gray-950 bg-white h-auto">
+      <FloatingNav className="text-black " navItems={navItems} />
       <Hero />
       <Grid />
+      <Recentprojects/>
+      <Footer/>
     </main>
   );
 }

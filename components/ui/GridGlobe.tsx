@@ -396,7 +396,7 @@ export function GlobeDemo() {
 
   return (
     <div className="flex items-center justify-center absolute -left-5 top-20 md:top-40 w-full h-full">
-      <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
+      <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent z-40" />
       <div className="absolute w-full h-72 md:h-full z-10">
         <World data={sampleArcs} globeConfig={globeConfig} />
       </div>

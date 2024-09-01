@@ -13,7 +13,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
+        "grid grid-cols-1 md:grid-cols-2 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
         className
       )}
     >
@@ -23,16 +23,16 @@ export const BentoGrid = ({
 };
 
 export const BentoGridItem = ({
-  className,
   id,
   title,
   description,
+  className,
   img,
   imgClassName,
   titleClassName,
   spareImg,
 }: {
-  className?: string;
+  className: string;
   id: number;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
@@ -65,8 +65,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-3xl border border-blue-600 group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
-        className
+        "row-span-1 relative overflow-hidden rounded-3xl border border-blue-600 group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 ",className
       )}
     // style={{
     //   //   add these two
@@ -92,7 +91,7 @@ export const BentoGridItem = ({
             <img
               src={img}
               alt={img}
-              className={cn(imgClassName, "object-cover object-center")}
+              className={cn(imgClassName, " object-cover object-center md:absolute md:bottom-0 md:right-0 md:h-64")}
             />
           )}
         </div>
@@ -111,16 +110,16 @@ export const BentoGridItem = ({
         </div>
 
         <div
-          className={cn(
-            "  group-hover/bento:translate-x-2 transition duration-200 md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10 ", titleClassName
+          className={cn(titleClassName,
+            " group-hover/bento:translate-x-2 transition duration-200 md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10 md:ml-0 md:mr-0"
           )}
         >
-          <div className="font-light md:max-w-32 md:text-xs lg:text-base text-sm text-gray-800 z-10 font-Lato">
+          <div className="font-light md:max-w-52 md:text-lg lg:text-base text-sm text-gray-800 z-10 font-Lato ">
             {description}
           </div>
           <div
             className={cn(
-              "font-Roboto text-lg lg:text-3xl max-w-96 font-bold z-10 "
+              "font-Roboto text-lg lg:text-3xl max-w-96 font-bold z-10 md:text-2xl"
             )}
           >
             {title}
@@ -131,7 +130,7 @@ export const BentoGridItem = ({
 
           {/* Tech stack list div */}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2 bottom-0">
               {/* tech stack lists */}
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                 {leftList.map((item, i) => (
