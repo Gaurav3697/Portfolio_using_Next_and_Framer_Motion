@@ -16,7 +16,7 @@ const words = [
 
 const Recentprojects = () => {
   return (
-    <div id='recentProjects' className='h-auto bg-sky-100 p-1 '>
+    <div id='recentProjects' className='h-auto bg-sky-100 p-1 overflow-x-hidden'>
       <div className="flex justify-center m-auto">
       <TypewriterEffectSmooth words={words} />
       </div>

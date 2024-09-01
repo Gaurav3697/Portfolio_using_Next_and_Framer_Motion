@@ -9,7 +9,7 @@ const Footer = () => {
         // router.push('/contact')
 
     return (
-        <div className='footer w-screen h-auto bg-sky-100 pt-[3rem]'>
+        <div className='footer w-screen h-auto bg-sky-100 pt-[3rem] overflow-x-hidden'>
             <div className='text-2xl w-2/3 mx-auto'>
                 <TextGenerateEffect words={"Bring your digital Presence to next Level"} className={"text-2xl font-Roboto text-center font-bold pt-4"} wordNoStart={1} wordNoend={4} />
                 <span className='mt-4 flex text-sm font-Lato font-thin w-full mx-auto justify-center md:text-2xl'>Lets Talk about Your next project</span>

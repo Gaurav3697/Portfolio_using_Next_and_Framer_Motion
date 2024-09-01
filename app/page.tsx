@@ -9,23 +9,19 @@ export default function Home() {
   const navItems=[
     {
       name:"Home",
-      link:"/"
+      link:"#home"
     },
     {
       name:"About",
-      link:"/"
+      link:"#about"
     },
     {
-      name:"Service", 
-      link:"/"
-    },
-    {
-      name:"Contact",
-      link:"/"
+      name:"projects", 
+      link:"#recentProjects"
     },
   ]
   return (
-    <main className="w-screen dark:bg-gray-950 bg-white h-auto">
+    <main className="overflow-x-hidden dark:bg-gray-950 bg-white h-auto ">
       <FloatingNav className="text-black " navItems={navItems} />
       <Hero />
       <Grid />

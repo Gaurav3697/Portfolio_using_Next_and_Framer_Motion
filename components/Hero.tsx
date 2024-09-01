@@ -9,7 +9,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div>
+    <div id='home'>
       <div className="hero-section bg-sky-100 h-screen relative w-auto overflow-hidden">
 
         <Spotlight className='top-12 left-5 h-64 w-64' fill="#00A0E1" />
@@ -45,7 +45,7 @@ const Hero = () => {
         </div>
 
         <div className="pictureSection top-[50vh] md:top-[40vh] left-0 right-0 relative ">
-          <img src='./assets/my_photo-removebg-preview.png' className='absolute z-10 -bottom-[20vh] md:-bottom-[36vh] left-1/2 transform -translate-x-1/2 ' />
+          <img src='./assets/my_photo-removebg-preview.png' className='absolute z-10 -bottom-[20vh] md:-bottom-[36vh] left-1/2 transform -translate-x-1/2 h-[25rem] md:h-[30rem]' />
           <div className="elipse bg-[#00A0E1] h-[80vh] w-[100vw] md:w-[35rem] absolute inset-x-0 mx-auto rounded-full"></div>
 
           <div className='button z-20 border border-white rounded-3xl backdrop-blur-xl w-72 py-1 px-1 inset-x-0 mx-auto top-24 md:top-36 relative overflow-hidden'>
