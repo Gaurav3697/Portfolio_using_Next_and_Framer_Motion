@@ -55,6 +55,15 @@ const Footer = () => {
                             alt={"fiverr"}
                         />
                     </a>
+
+                    <a href='https://github.com/Gaurav3697'>
+                        <Image
+                            src={"./assets/github.svg"}
+                            height={50}
+                            width={50}
+                            alt={"Github"}
+                        />
+                    </a>
                 </div>
             </div>
 
