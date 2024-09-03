@@ -15,7 +15,7 @@ const Hero = () => {
   }
   return (
     <div id='home'>
-      <div className="hero-section bg-sky-100 h-screen relative w-auto overflow-hidden">
+      <div className="hero-section bg-sky-100 dark:bg-gray-900 h-screen relative w-auto overflow-hidden">
 
         <Spotlight className='top-12 left-5 h-64 w-64' fill="#00A0E1" />
         <Spotlight className='top-10 left-3/4 h-52 w-52 ' fill="#00A0E1" />
@@ -49,15 +49,15 @@ const Hero = () => {
           {/* <TextGenerateEffect words={} />; */}
         </div>
 
-        <div className="pictureSection top-[50vh] md:top-[40vh] left-0 right-0 relative ">
-          <img src='./assets/my_photo-removebg-preview.png' className='absolute z-10 -bottom-[20vh] md:-bottom-[36vh] left-1/2 transform -translate-x-1/2 h-[25rem] md:h-[30rem]' />
+        <div className="pictureSection top-[50vh]  left-0 right-0 relative">
+          <img src='./assets/my_photo-removebg-preview.png' className='absolute z-10 -bottom-[28vh] md:-bottom-[40vh] left-1/2 transform -translate-x-1/2 h-[30rem] md:h-[30rem] h-md:h-[35rem] h-lg:h-[45rem]' />
           <div className="elipse bg-[#00A0E1] h-[80vh] w-[100vw] md:w-[35rem] absolute inset-x-0 mx-auto rounded-full"></div>
 
-          <div className='button z-20 border border-white rounded-3xl backdrop-blur-xl w-72 py-1 px-1 inset-x-0 mx-auto top-20 md:top-36 relative overflow-hidden'>
+          <div className='button z-20 border border-white rounded-3xl backdrop-blur-xl w-72 py-1 px-1 inset-x-0 mx-auto top-[16vh] h-md:top-[22vh] relative overflow-hidden'>
 
             <button className="z-20 relative inline-flex h-12 overflow-hidden rounded-full p-[1px]" onClick={projecthandleClick}>
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-white[#00A0E1] px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-white[#00A0E1] px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl" >
                 View Projects<BsArrowUpRight />
               </span>
             </button>

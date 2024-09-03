@@ -16,7 +16,7 @@ const words = [
 
 const Grid = () => {
   return (
-    <div id='about' className='h-auto py-20 bg-sky-100 p-1 overflow-x-hidden'>
+    <div id='about' className='h-auto py-20 bg-sky-100 dark:bg-gray-900 p-1 overflow-x-hidden'>
       <div className='flex justify-center m-auto'>
         <TypewriterEffectSmooth words={words} />
       </div>
