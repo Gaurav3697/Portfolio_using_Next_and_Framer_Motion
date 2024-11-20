@@ -6,6 +6,8 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { Typewriter } from 'react-simple-typewriter';
 import { BsArrowUpRight } from "react-icons/bs";
 import { useRouter } from 'next/navigation';
+import Lottie from 'lottie-react';
+import animationData from "@/components/lottie/coding.json"
 
 
 const Hero = () => {
@@ -13,13 +15,14 @@ const Hero = () => {
   const projecthandleClick = () => {
     router.push('#recentProjects')
   }
+
+
   return (
     <div id='home'>
       <div className="hero-section bg-sky-100 dark:bg-gray-900 h-screen relative w-auto overflow-hidden">
 
-        <Spotlight className='top-12 left-5 h-64 w-64' fill="#00A0E1" />
-        <Spotlight className='top-10 left-3/4 h-52 w-52 ' fill="#00A0E1" />
-        <Spotlight className='top-32 left-1/2 h-64 w-64 ' fill="#00A0E1" />
+        <Spotlight className='top-0 left-32 h-96 w-96' fill="#FFFFFF" />
+        <Spotlight className='top-0 right-32 h-[100vh] w-96' fill="#FFFFFF" />
 
 
         <div className="intoductionHeading relative text-xl md:text-3xl md:tracking-wider lg:tracking-widest lg:text-5xl font-Roboto left-0 right-0 mx-auto text-center top-[14vh] h-40 w-[99vw] md:w-[50vw]  p-10">
@@ -37,7 +40,13 @@ const Hero = () => {
             <img src="./assets/big.svg" alt="" className='w-10 absolute -left-8 top-24' /></div>
 
         </div>
-
+        <div className='gif-file w-[40vw] h-[50vh] absolute left-[30vw] top-52'>
+          <Lottie
+            animationData={animationData}
+            height={400}
+            width={400}
+          />
+        </div>
 
         <div className="extratexts font-Lato absolute top-[38vh] w-[80vw] right-[5vw] md:right-[15vw]">
           <div className="extraTextLeft hidden md:block w-44 left-[10vw]">
@@ -50,8 +59,9 @@ const Hero = () => {
         </div>
 
         <div className="pictureSection top-[50vh]  left-0 right-0 relative">
-          <img src='./assets/my_photo-removebg-preview.png' className='absolute z-10 -bottom-[28vh] md:-bottom-[40vh] left-1/2 transform -translate-x-1/2 h-[30rem] md:h-[30rem] h-md:h-[35rem] h-lg:h-[45rem]' />
-          <div className="elipse bg-[#00A0E1] h-[80vh] w-[100vw] md:w-[35rem] absolute inset-x-0 mx-auto rounded-full"></div>
+
+          {/* <img src='./assets/my_photo-removebg-preview.png' className='absolute z-10 -bottom-[28vh] md:-bottom-[40vh] left-1/2 transform -translate-x-1/2 h-[30rem] md:h-[30rem] h-md:h-[35rem] h-lg:h-[45rem]' /> */}
+
 
           <div className='button z-20 border border-white rounded-3xl backdrop-blur-xl w-72 py-1 px-1 inset-x-0 mx-auto top-[16vh] h-md:top-[22vh] relative overflow-hidden'>
 
