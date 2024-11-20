@@ -77,6 +77,13 @@ export const Projectsdata = [
         "imgSrc": "/assets/college_website.png"
       },
       {
+        "key": 7,
+        "title": "Normal portfolio design",
+        "description": "This is a very simple single page application with minimilistic animation to refresh my css skillṣ.",
+        "url": "https://college-website-taupe.vercel.app/",
+        "imgSrc": "/assets/portfolio.png"
+      },
+      {
         "key": 3,
         "title": "ECCOMERCE WEBSITE(GEECTRONICS)",
         "description": "This is fully functional Ecommerce website made using MERN",
@@ -87,7 +94,7 @@ export const Projectsdata = [
         "key": 4,
         "title": "ANIMATED MINIMILISTIC PORTFOLIO WEBSITE",
         "description": "This is the fully animated Portfolio Project with sleek animations",
-        "url": "https://my-ecommerce-frontend-delta.vercel.app/",
+        "url": "https://portfolio-using-next-and-framer-motion.vercel.app/",
         "imgSrc": "/assets/animated_portfolio.png"
       },
       {
@@ -98,10 +105,10 @@ export const Projectsdata = [
         "imgSrc": "/assets/chatapp.png"
       },
       {
-        "key": 5,
+        "key": 6,
         "title": "3D desisignable t-shirt app",
         "description": "This is a basic project which i will integrate a 3D tshirt model whose design can be changed by users.",
-        "url": "",
+        "url": "https://3d-shop-uw9x.vercel.app/",
         "imgSrc": "/assets/three.png"
       },
 ]
