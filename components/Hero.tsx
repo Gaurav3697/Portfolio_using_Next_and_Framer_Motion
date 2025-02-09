@@ -40,7 +40,7 @@ const Hero = () => {
             <img src="./assets/big.svg" alt="" className='w-10 absolute -left-8 top-24' /></div>
 
         </div>
-        <div className='gif-file w-[40vw] h-[50vh] absolute left-[30vw] top-52'>
+        <div className='gif-file w-[90vw] h-[60vh] md:w-[40vw] md:h-[50vh] absolute left-0 md:left-[30vw] top-[45vh] sm:top-52'>
           <Lottie
             animationData={animationData}
             height={400}
@@ -52,7 +52,7 @@ const Hero = () => {
           <div className="extraTextLeft hidden md:block w-44 left-[10vw]">
             <FaQuoteLeft />I am a web developer who develops websites using MERN and next.js. I also developes websites using wordpress
           </div>
-          <div className="extraTextright absolute right-0">
+          <div className="extraTextright absolute right-0 ">
             <img src="/assets/rating.svg" alt="" className='w-24' /><div className='font-Lato font-bold '>Unmatched Quality</div><div>Guaranteed</div>
           </div>
           {/* <TextGenerateEffect words={} />; */}
