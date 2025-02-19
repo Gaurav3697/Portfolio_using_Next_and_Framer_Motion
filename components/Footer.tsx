@@ -38,6 +38,8 @@ const Footer = () => {
                         />
                     </a>
 
+                    <div className="h-16 w-[2px] rounded-3xl bg-white"></div>
+
                     <a href='https://www.linkedin.com/in/gaurav-mahato-0a2aa7265/'>
                         <Image
                             src={"./assets/linkedin.svg"}
@@ -46,6 +48,8 @@ const Footer = () => {
                             alt={"LinkedIn"}
                         />
                     </a>
+
+                    <div className="h-16 w-[2px] rounded-3xl bg-white"></div>
 
                     <a href='https://www.fiverr.com/gauravmahato819'>
                         <Image
@@ -56,9 +60,11 @@ const Footer = () => {
                         />
                     </a>
 
+                    <div className="h-16 w-[2px] rounded-3xl bg-white"></div>
+
                     <a href='https://github.com/Gaurav3697'>
                         <Image
-                            src={"./assets/github.svg"}
+                            src={"/assets/github.png"}
                             height={50}
                             width={50}
                             alt={"Github"}

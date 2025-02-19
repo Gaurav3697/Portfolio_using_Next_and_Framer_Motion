@@ -41,7 +41,7 @@ export const gridItems = [
     },
     {
         id:5,
-        title: "Currently Building a Chat App",
+        title: "Currently Building a animated Beer app",
         description: "",
         className: "md:col-span-3 md:row-span-2",
         imgClassName: "absolute right-0 bottom-0 h-32 md:w-96 w-60",
@@ -67,48 +67,64 @@ export const Projectsdata = [
         "title": "TODO APP",
         "description": "This is a TODO App which stores task in database.",
         "url": "https://todo-frontend-with-react.vercel.app/",
-        "imgSrc": "/assets/Todo.png"
+        "imgSrc": "/assets/Todo.png",
+        "IsLive":true,
       },
       {
         "key": 2,
         "title": "College Website",
         "description": "This is a very simple single page application with minimilistic animation to refresh my css skillṣ.",
         "url": "https://college-website-taupe.vercel.app/",
-        "imgSrc": "/assets/college_website.png"
+        "imgSrc": "/assets/college_website.png",
+        "IsLive":true,
       },
       {
         "key": 7,
         "title": "Normal portfolio design",
         "description": "This is a very simple single page application with minimilistic animation to refresh my css skillṣ.",
         "url": "https://college-website-taupe.vercel.app/",
-        "imgSrc": "/assets/portfolio.png"
+        "imgSrc": "/assets/portfolio.png",
+        "IsLive":true
       },
       {
         "key": 3,
         "title": "ECCOMERCE WEBSITE(GEECTRONICS)",
         "description": "This is fully functional Ecommerce website made using MERN",
         "url": "https://my-ecommerce-frontend-delta.vercel.app/",
-        "imgSrc": "/assets/ecommerce.png"
+        "imgSrc": "/assets/ecommerce.png",
+        "IsLive":true,
       },
       {
         "key": 4,
         "title": "ANIMATED MINIMILISTIC PORTFOLIO WEBSITE",
         "description": "This is the fully animated Portfolio Project with sleek animations",
         "url": "https://portfolio-using-next-and-framer-motion.vercel.app/",
-        "imgSrc": "/assets/animated_portfolio.png"
-      },
-      {
-        "key": 5,
-        "title": "CHATAPP",
-        "description": "This is a chatapp made using MERN stack",
-        "url": "",
-        "imgSrc": "/assets/chatapp.png"
+        "imgSrc": "/assets/animated_portfolio.png",
+        "IsLive":true,
       },
       {
         "key": 6,
         "title": "3D desisignable t-shirt app",
         "description": "This is a basic project which i will integrate a 3D tshirt model whose design can be changed by users.",
         "url": "https://3d-shop-uw9x.vercel.app/",
-        "imgSrc": "/assets/three.png"
+        "imgSrc": "/assets/three.png",
+        "IsLive":false,
+      },
+      {
+        "key": 7,
+        "title": "Patient management system",
+        "description": "This is a real problim solving projects that i made to learn appwrite. we can take appointment of doctor through this web app without waiting for days.",
+        "url": "https://3d-shop-uw9x.vercel.app/",
+        "imgSrc": "/assets/pms.png",
+        "IsLive":false,
+      },
+      {
+        "key": 8,
+        "title": "Pheonix beer website",
+        // "description": "This website consists of sllek animations that can grab the attension of user",
+        "description": "Coming Soon",
+        "url": "https://3d-shop-uw9x.vercel.app/",
+        "imgSrc": "/assets/pheonix.png",
+        "IsLive":false,
       },
 ]

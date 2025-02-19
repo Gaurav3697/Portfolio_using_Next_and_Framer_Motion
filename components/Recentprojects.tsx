@@ -10,7 +10,7 @@ const words = [
   },
   {
     text: "Projects",
-    className: "text-4xl text-sky-500 font-bold font-Roboto",
+    className: "text-4xl text-red-500 font-bold font-Roboto",
   },
 ];
 
@@ -23,7 +23,7 @@ const Recentprojects = () => {
       <div className='w-full m-auto grid gap-0 lg:grid-cols-2'>
         {
           Projectsdata.map((item, i) => (
-            <ThreeDCardDemo key={item.key} id={item.key} title={item.title} description={item.description} img={item.imgSrc} url={item.url}/>
+            <ThreeDCardDemo key={item.key} id={item.key} title={item.title} description={item.description} img={item.imgSrc} url={item.url} isLive={item.IsLive}/>
           ))
         }
       </div>

@@ -16,15 +16,11 @@ const Hero = () => {
     router.push('#recentProjects')
   }
 
-
   return (
     <div id='home'>
       <div className="hero-section bg-sky-100 dark:bg-gray-900 h-screen relative w-auto overflow-hidden">
-
         <Spotlight className='top-0 left-32 h-96 w-96' fill="#FFFFFF" />
-        <Spotlight className='top-0 right-32 h-[100vh] w-96' fill="#FFFFFF" />
-
-
+        {/* <Spotlight className='top-0 right-32 h-[100vh] w-96' fill="#FFFFFF" /> */}
         <div className="intoductionHeading relative text-xl md:text-3xl md:tracking-wider lg:tracking-widest lg:text-5xl font-Roboto left-0 right-0 mx-auto text-center top-[14vh] h-40 w-[99vw] md:w-[50vw]  p-10">
 
           <img src="./assets/small.svg" alt="" className='w-10 absolute right-[1rem] top-0' />
@@ -34,7 +30,7 @@ const Hero = () => {
           <div className='heading relative'><TextGenerateEffect words={"I'm Gaurav"} className={"text-3xl md:text-5xl font-Roboto md:tracking-wider lg:tracking-widest lg:text-6xl"} wordNoStart={0} wordNoend={2} />
 
             <Typewriter
-              words={['wordpress developer', 'MERN developer', 'React developer', 'Nodejs developer', 'Next developer']}
+              words={[ 'MERN developer', 'React developer', 'Nodejs developer', 'Next developer']}
               loop={true}
             />
             <img src="./assets/big.svg" alt="" className='w-10 absolute -left-8 top-24' /></div>

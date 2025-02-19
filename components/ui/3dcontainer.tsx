@@ -11,12 +11,14 @@ export function ThreeDCardDemo(
     description,
     img,
     url,
+    isLive
   }: {
     id: number;
     title?: string | React.ReactNode;
     description?: string | React.ReactNode;
     img: string;
-    url:string;
+    url: string;
+    isLive: boolean;
   }
 ) {
   return (
@@ -26,7 +28,7 @@ export function ThreeDCardDemo(
           translateZ="50"
           className="text-xl font-bold text-neutral-600 dark:text-white"
         >
-         {title}
+          {title}
         </CardItem>
         <CardItem
           as="p"
@@ -50,23 +52,25 @@ export function ThreeDCardDemo(
           />
         </CardItem>
         <div className="flex justify-between items-center mt-5">
-          <CardItem
+          {/* <CardItem //prefer tech used
             translateZ={20}
             translateX={-40}
             as="button"
             className="px-4 py-1 rounded-xl text-xs font-normal dark:text-white"
           >
             View it →
-          </CardItem>
-          <CardItem
-            translateZ={20}
-            translateX={40}
-            as="button"
-            onClick={() => window.open(url, "_blank")}
-            className="font-bold font-Roboto text-sky-600"
-          >
-            Live Preview →
-          </CardItem>
+          </CardItem> */}
+          {
+            isLive ? (<CardItem
+              translateZ={20}
+              translateX={40}
+              as="button"
+              onClick={() => window.open(url, "_blank")}
+              className="font-bold font-Roboto text-sky-600"
+            >
+              Live Preview →
+            </CardItem>) : <span className="font-bold font-Roboto text- ">Coming Soon</span>
+          }
         </div>
       </CardBody>
     </CardContainer>
