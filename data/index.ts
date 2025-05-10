@@ -103,28 +103,11 @@ export const Projectsdata = [
         "IsLive":true,
       },
       {
-        "key": 6,
-        "title": "3D desisignable t-shirt app",
-        "description": "This is a basic project which i will integrate a 3D tshirt model whose design can be changed by users.",
-        "url": "https://3d-shop-uw9x.vercel.app/",
-        "imgSrc": "/assets/three.png",
-        "IsLive":false,
-      },
-      {
         "key": 7,
         "title": "Patient management system",
         "description": "This is a real problim solving projects that i made to learn appwrite. we can take appointment of doctor through this web app without waiting for days.",
         "url": "https://3d-shop-uw9x.vercel.app/",
         "imgSrc": "/assets/pms.png",
-        "IsLive":false,
-      },
-      {
-        "key": 8,
-        "title": "Pheonix beer website",
-        // "description": "This website consists of sllek animations that can grab the attension of user",
-        "description": "Coming Soon",
-        "url": "https://3d-shop-uw9x.vercel.app/",
-        "imgSrc": "/assets/pheonix.png",
         "IsLive":false,
       },
 ]
